@@ -1,0 +1,150 @@
+--------------------
+./configure --prefix=/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64 --static
+2022年 2月 8日 星期二 10时37分26秒 CST
+Using aarch64-linux-android-ar
+Using aarch64-linux-android-ranlib
+Using aarch64-linux-android-nm
+=== ztest88296.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c ztest88296.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest88296.c ===
+int foo() { return 0; }
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG ztest88296.c
+
+Building static library libz.a version 1.2.8 with aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64.
+
+=== ztest88296.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest88296.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 -o ztest88296 ztest88296.c
+Checking for strerror... Yes.
+
+=== ztest88296.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking for unistd.h... Yes.
+
+=== ztest88296.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking for stdarg.h... Yes.
+
+=== ztest88296.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest88296.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 -o ztest88296 ztest88296.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest88296.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest88296.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -c -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 ztest88296.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static all64
+AR = aarch64-linux-android-ar
+ARFLAGS = rc
+CC = aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64
+CFLAGS = -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64 -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -no-canonical-prefixes -L/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/lib
+LDSHARED = aarch64-linux-android-gcc --sysroot=/Users/staff/Documents/worksoft/android-ndk-r13/platforms/android-21/arch-arm64
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = aarch64-linux-android-ranlib
+SFLAGS = -fpic -ffunction-sections -funwind-tables -fstack-protector -no-canonical-prefixes -I/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64/include -O3 -DNDEBUG -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.8
+Z_U4 =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/install-android/arm64
+sharedlibdir = ${libdir}
+uname = android
+--------------------
+
+

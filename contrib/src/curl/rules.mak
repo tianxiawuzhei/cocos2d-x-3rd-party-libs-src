@@ -1,6 +1,6 @@
 # curl
+CURL_VERSION := 7.48.0
 
-CURL_VERSION := 7.52.1
 CURL_URL :=  http://curl.haxx.se/download/curl-$(CURL_VERSION).tar.gz
 
 $(TARBALLS)/curl-$(CURL_VERSION).tar.gz:
@@ -28,7 +28,7 @@ endif
 .curl: curl .zlib .openssl
 	$(RECONF)
 	cd $< && $(HOSTVARS_PIC) ./configure $(HOSTCONF) \
-		--with-ssl=$(PREFIX) \
+		--with-ssl=yes \
 		--with-zlib \
 		--enable-ipv6 \
 		--disable-ldap \

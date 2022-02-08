@@ -1,0 +1,14 @@
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/install/local.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/install/strip.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/install.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/list_install_components.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/rebuild_cache.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/CMakeFiles/edit_cache.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/install/local.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/list_install_components.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/rebuild_cache.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/edit_cache.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/install/strip.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/install.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/chipmunk_static.dir
+/Users/staff/Documents/cocos2dxlib/cocos2d-x-3rd-party-libs-src/contrib/android-arm64/chipmunk/src/CMakeFiles/chipmunk.dir
